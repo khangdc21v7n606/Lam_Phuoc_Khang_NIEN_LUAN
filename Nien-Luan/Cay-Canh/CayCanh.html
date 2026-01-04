@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vườn Nho Sóc Trăng - Trang Chủ</title>
+    <link rel="stylesheet">
+    <link rel="stylesheet" href="CayCanh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header id="mainHeader">
+        <div class="logo"><i class="fas fa-leaf"></i> Vườn Nho Sóc Trăng</div>
+        <nav>
+            <a href="file:///D:/BaiTap/Nien-Luan/Gioi-Thieu/GioiThieu.html">Quay Lại</a>
+            <a href="#about">Giới Thiệu</a>
+            <a href="#products">Sản Phẩm</a>
+            <a href="javascript:void(0)" onclick="openLogin()" class="btn-login-nav">Đăng Nhập</a>
+        </nav>
+    </header>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLogin()">&times;</span>
+            <h2>Đăng Nhập</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>Tên đăng nhập</label>
+                    <input type="text" id="loginUser" required placeholder="Nhập tên của bạn">
+                </div>
+                <div class="input-group">
+                    <label>Mật khẩu</label>
+                    <input type="password" id="loginPass" required placeholder="Nhập mật khẩu">
+                </div>
+                <button type="submit" class="btn-submit">Đăng Nhập</button>
+                <p>Chưa có tài khoản? <a href="file:///D:/BaiTap/Nien-Luan/Dang-Ky/DangKi.html"
+                        style="color: #2e7d32; margin-left: 5px;">Đăng ký ngay</a></p>
+            </form>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('Anh-Nho/Nho-Ha-Den.jpg');">
+            </div>
+            <div class="slide" style="background-image: url('Anh-Nho/Nho-Keo.jpg');">
+            </div>
+            <div class="slide" style="background-image: url('Anh-Nho/Nho-Ngon-Tay.jpg');">
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>Tinh Hoa Vườn Nho Sóc Trăng</h1>
+            <p>Mang thiên nhiên xanh mát vào từng hơi thở cuộc sống</p>
+            <a href="#products" class="btn-hero">Khám Phá Ngay</a>
+        </div>
+    </section>
+
+    <section class="about section-fade-in" id="about">
+        <h2>Câu Chuyện Của Chúng Tôi</h2>
+        <div class="divider"></div>
+        <p>Vườn Nho Sóc Trăng không chỉ bán cây, chúng tôi trao gửi những mầm xanh hy vọng. Với bộ sưu tập các loại nho
+            quý hiếm và cây cảnh phong thủy, chúng tôi cam kết mang lại không gian sống đẳng cấp và thư thái cho ngôi
+            nhà của bạn.</p>
+    </section>
+
+    <section class="products" id="products">
+        <div class="section-title section-fade-in">
+            <h2>Sản Phẩm Nổi Bật</h2>
+            <p>Tuyển chọn những giống cây tốt nhất</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="product section-fade-in">
+                <div class="product-img-box">
+                    <img src="D:\BaiTap\Nien-Luan\Hinh-Anh\ot-peru-do-3.webp" alt="Ớt Peru">
+                </div>
+                <div class="product-info">
+                    <h3>Cây Ớt Peru</h3>
+                    <p class="desc">Dòng ớt cay nhất thế giới với màu sắc rực rỡ, thích hợp làm cảnh và gia vị thượng
+                        hạng.</p>
+                    <div class="price">150.000đ</div>
+                    <button class="btn-buy">Đặt Mua</button>
+                </div>
+            </div>
+
+            <div class="product section-fade-in">
+                <div class="product-img-box">
+                    <img src="D:\BaiTap\Nien-Luan\Hinh-Anh\nho-keo.jpg" alt="Nho Kẹo">
+                </div>
+                <div class="product-info">
+                    <h3>Nho Kẹo</h3>
+                    <p class="desc">Giống nho hiếm với hương thơm kẹo ngọt ngào, gợi nhớ tuổi thơ.</p>
+                    <div class="price">90.000đ</div>
+                    <button class="btn-buy">Đặt Mua</button>
+                </div>
+            </div>
+
+            <div class="product section-fade-in">
+                <div class="product-img-box">
+                    <img src="D:\BaiTap\Nien-Luan\Hinh-Anh\nho-ngon-tay.jpg" alt="Nho Ngón Tay">
+                </div>
+                <div class="product-info">
+                    <h3>Nho Ngón Tay</h3>
+                    <p class="desc">Hình dáng độc đáo, không hạt, thịt chắc giòn, vị ngọt thanh mát.</p>
+                    <div class="price">90.000đ</div>
+                    <button class="btn-buy">Đặt Mua</button>
+                </div>
+            </div>
+
+            <div class="product section-fade-in">
+                <div class="product-img-box">
+                    <img src="D:\BaiTap\Nien-Luan\Hinh-Anh\nho-ha-den.jpg" alt="Nho Hạ Đen">
+                </div>
+                <div class="product-info">
+                    <h3>Nho Hạ Đen</h3>
+                    <p class="desc">Màu đen tuyền huyền bí, chùm quả sai trĩu, biểu tượng của sự sung túc.</p>
+                    <div class="price">90.000đ</div>
+                    <button class="btn-buy">Đặt Mua</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-more-container">
+            <a href="file:///D:/BaiTap/Nien-Luan/Dat-Hang/DatHang.html" class="view-more-btn">Xem Tất Cả Sản Phẩm <i
+                    class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Vườn Nho Sóc Trăng</h3>
+            <p>Địa chỉ: 68 An Dương Vương, ấp Hòa Mỹ, huyện Mỹ Xuyên, Sóc Trăng</p>
+            <p>Hotline: 09348989036 </p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cây Cảnh Sóc Trăng | Thiết kế bởi KhangDC21V7N606</p>
+        </div>
+    </footer>
+
+    <script src="CayCanh.js"></script>
+</body>
+
+</html>
